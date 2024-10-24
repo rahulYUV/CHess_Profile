@@ -1,0 +1,158 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Particles background */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Fire effect */
+.fire-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+}
+
+.fire {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #ff6600 0%, transparent 80%);
+    animation: fire 3s infinite;
+    opacity: 0.3;
+}
+
+@keyframes fire {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(1.1); }
+    100% { transform: scaleY(1); }
+}
+
+/* Main content */
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    z-index: 3;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.glowing-text {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #00ff00,
+                 0 0 20px #00ff00,
+                 0 0 30px #00ff00;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ff00,
+                     0 0 20px #00ff00,
+                     0 0 30px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #00ff00,
+                     0 0 30px #00ff00,
+                     0 0 40px #00ff00;
+    }
+}
+
+/* Social links */
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00ff00;
+}
+
+/* Sections */
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #00ff00;
+}
+
+/* Project grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #00ff00;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .glowing-text {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
