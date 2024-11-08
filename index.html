@@ -3,71 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Kumar - Portfolio</title>
+    <title>Rahul Kumar - Backend Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="particles-js"></div>
-    <div class="fire-container">
-        <div class="fire"></div>
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
     </div>
 
-    <main class="container">
-        <header>
-            <h1 class="glowing-text">Rahul Kumar</h1>
-            <div class="social-links">
-                <a href="https://github.com/rahulYUV" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/r%C3%A3h%C5%ABl-kumar-214468268/" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://leetcode.com/u/b9CT2D8Ccx/" target="_blank" class="social-icon">
-                    <i class="fas fa-code"></i>
-                </a>
-                <a href="mailto:rootrahull21@gmail.com" class="social-icon">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </header>
+    <div id="particles-js"></div>
+    
+    <div class="container">
+        <h1 class="glowing-text">Rahul Kumar</h1>
+        <p class="subtitle">Backend Engineer</p>
+        
+        <div class="social-links">
+            <a href="https://github.com/rahulYUV" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/r%C3%A3h%C5%ABl-kumar-214468268/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:rootrahull21@gmail.com" class="social-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
 
-        <section id="about">
-            <h2>About Me</h2><p>
-                I'm a passionate developer and chess enthusiast dedicated to building innovative solutions that make a difference. With a strong foundation in back-end technologies, I focus on creating efficient and scalable applications that solve real-world problems. I enjoy tackling complex challenges and am always eager to learn and grow in my development journey.
-            </p> </section>
+        
+    </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>AI-Powered School Chatbot</h3>
-                    <p>An intelligent chatbot designed to assist students and staff with school-related queries, built using natural language processing.</p>
-                    <div class="tech-stack">React • Python • NLP • Azure</div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Farm Management System</h3>
-                    <p>A comprehensive solution for managing farm operations, tracking crops, and optimizing resources.</p>
-                    <div class="tech-stack">Node.js • MongoDB • React • Express</div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Interactive Chess Game</h3>
-                    <p>A modern chess application with real-time multiplayer capabilities and AI opponent options.</p>
-                    <div class="tech-stack">React • WebSocket • Chess.js • Stockfish</div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>A dynamic personal portfolio showcasing my projects and skills with interactive animations.</p>
-                    <div class="tech-stack">HTML • CSS • JavaScript • Particles.js</div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
